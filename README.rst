@@ -57,6 +57,9 @@ Usage
         # Messages received after specific date
         messages_from = imbox.messages(date__gt=datetime.date(2013, 7, 30))
 
+        # Messages received on a specific date
+        messages_from = imbox.messages(date__on=datetime.date(2013, 7, 30))
+
         # Messages from a specific folder
         messages_folder = imbox.messages(folder='Social')
 
@@ -130,7 +133,7 @@ Usage
         ssl=False,
         ssl_context=None,
         starttls=True) as imbox:
-        
+
 
 
 Changelog
